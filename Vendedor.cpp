@@ -2,7 +2,7 @@
 #include "Empregado.hpp"
 #include "Vendedor.hpp"
 
-Vendedor :: Vendedor(std :: string nome, double quotamvendas,double salariohvend )
+Vendedor :: Vendedor(std :: string nome, double quotamvendas, double salariohvend )
     {
          this->_nome=nome;
          this->_quotamvendas=quotamvendas;
@@ -19,7 +19,6 @@ class Vendedor : public Empregado {
 
 Vendedor :: Empregado()
     {
-      salarioheng=getsalarioHora();
       double pagamentoMes(horasTrabalhadas)
 	  Vendedor* new_vend = new vend(nome);
     }

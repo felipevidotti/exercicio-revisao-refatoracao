@@ -16,8 +16,8 @@ class Empregado {
 	  
 	  //Cálculo de hora extra (+50% se horasTrabalhadas > 8)
       if (horasTrabalhadas > 8) {
-        double x = horasTrabalhadas - 8;
-        t += x / 2;
+        double horaExtra = horasTrabalhadas - 8;
+        t += horaExtra / 2;
       }
 	  return t * salarioHora;
     }

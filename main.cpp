@@ -10,6 +10,7 @@ int main() {
   //Utilizar getters e setters
   //Criação de vetores que armazenam os dados do problema
   //Adicionar a variável i para preencher os vetores i vezes
+  //Deixar as variáveis mais fáceis de serem entendidas
   int i,n;
   std::cin >> nome;
   std::cin >> salarioHora;
