@@ -7,13 +7,12 @@
 class Empregado {
 	
   public:
-    double salarioHora;  
-    double quotaMensalVendas;  
 
+    double getsalarioHora() const { return salarioHora; }
+    double getquotaMensalVendas() const { return quotaMensalVendas; }
+    double gethorasTrabalhadas() const { return horasTrabalhadas; }
 
     double pagamentoMes(double horasTrabalhadas) {
- 
-      double t = horasTrabalhadas;
 	  
 	  //Cálculo de hora extra (+50% se horasTrabalhadas > 8)
       if (horasTrabalhadas > 8) {
@@ -22,7 +21,12 @@ class Empregado {
       }
 	  return t * salarioHora;
     }
-	
+     Empregado(double horasTrabalhadas) { t=horasTrabalhadas; }
+
+	protected:
+    double salarioHora;  
+    double quotaMensalVendas;
+    double t;
 };
 
 #endif
